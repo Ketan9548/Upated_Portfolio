@@ -32,8 +32,8 @@
     }
   }
 
-  input[type='text'],
-  input[type='email'] {
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     border: 0;
     background: #115173;
@@ -65,7 +65,7 @@
     border: 1px solid #ffd700;
     float: left;
     border-radius: 4px;
-    background: 0 0;
+    background: transparent;
     text-transform: uppercase;
     float: right;
     text-align: center;
@@ -122,81 +122,81 @@
     width: 100%;
     height: 400px;
   }
-  
+
   .info-map {
     display: none;
   }
-}
 
-.container.contact-page{
-  h1 {
-    font-size: 53px;
-    font-family: 'Coolvetica';
-    color: #ffd700;
-    font-weight: 400;
-    margin-top: 0;
-    position: relative;
-    margin-bottom: 40px;
-    left: 9px;
-
-    &:before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 2px;
-      left: -10px;
-      opacity: 0.6;
-      line-height: 18px;
-    }
-
-    &:after {
-      content: '<h1/>';
-      font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
-      font-size: 18px;
-      line-height: 18px;
-      position: absolute;
-      left: -30px;
-      bottom: -20px;
-      margin-left: 20px;
-      opacity: 0.6;
-    }
+  .contact-form ul li.half {
+    width: 100%;
+    margin-left: 0;
+    float: none;
   }
 
-  p {
-    font-size: 13px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 300;
-    max-width: fit-content;
-    animation: pulse 1s;
-    &:nth-of-type(1) {
-      animation-delay: 1.1s;
-    }
-    &:nth-of-type(2) {
-      animation-delay: 1.2s;
-    }
-    &:nth-of-type(3) {
-      animation-delay: 1.3s;
+  .contact-form {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
     }
   }
-
-.text-zone {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
 }
 
-.text-animate-hover {
-  &:hover {
-    color: #fff;
+@media screen and (max-width: 768px) {
+  .text-zone {
+    width: 80%;
+    left: 10%;
+    top: 40%;
+  }
+
+  .map-wrap {
+    height: 300px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 14px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  .contact-form .flat-button {
+    font-size: 10px;
+    padding: 6px 8px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .text-zone {
+    width: 90%;
+    left: 5%;
+  }
+
+  .map-wrap {
+    height: 250px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 12px;
+    height: 25px;
+    padding: 8px;
+  }
+
+  .contact-form .flat-button {
+    font-size: 9px;
+    padding: 5px 6px;
+    margin-right: 5px;
+  }
+
+  .container.contact-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .container.contact-page p {
+    font-size: 12px;
+  }
 }

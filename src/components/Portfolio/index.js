@@ -35,13 +35,13 @@ const Portfolio = () => {
                 </h1>
                 <div className="about_me">
                     <p>
-                        I am a passionate and experienced software developer with a strong background in developing robust and scalable applications. With a keen eye for detail and a deep understanding of software engineering principles, I craft efficient and maintainable solutions tailored to meet client requirements.
+                        I am a passionate and experienced software developer with a strong background in developing robust and scalable applications.
                     </p>
                 </div>
                 <h1 className="skills"><AnimatedLetters letterClass={letterClass} strArray={"Resume".split("")} idx={12}/></h1>
                 <div className="button1">
                     <button className="donload" onClick={handleDownload}>
-                        <a>Download Resume</a>
+                        <href>Download Resume</href>
                     </button>
                 </div>
             </div>
