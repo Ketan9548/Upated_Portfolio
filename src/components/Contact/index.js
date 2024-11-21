@@ -29,7 +29,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          e.target.reset() // Clear the form instead of reload
+          e.target.reset()
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -58,13 +58,18 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="user_name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
-                    name="email"
+                    name="user_email"
                     required
                   />
                 </li>
@@ -84,7 +89,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>
             </form>
