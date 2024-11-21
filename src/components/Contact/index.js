@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+import { useEffect, useState, useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import 'leaflet/dist/leaflet.css' // Ensure this is imported
 import './index.scss'
+import Loader from 'react-loaders'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -12,19 +12,24 @@ const Contact = () => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 4000);
-    return () => clearTimeout(timeoutId);
-  }, []);
+      setLetterClass('text-animate-hover')
+    }, 4000)
+    return () => clearTimeout(timeoutId)
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs
-      .sendForm('service_krkp1kv', 'template_xlux5e3', form.current, '4jyCMO36P_X2xRUhq')
+      .sendForm(
+        'service_2dd3lrh',
+        'template_n6ylirm',
+        form.current,
+        'CojXfZ2S0PHaSCeel'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          e.target.reset() // Clear the form instead of reload
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -44,9 +49,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am interested in Full Stack Software Developer opportunities,
+            especially in ambitious or large projects. If you have any other
+            requests or questions, please feel free to contact me using the form
+            below.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -87,18 +93,15 @@ const Contact = () => {
         <div className="info-map">
           Sector Pi-1
           <br />
-          Greater Noida (Uttra Pradesh)
-          India <br />
+          Greater Noida (Uttar Pradesh), India <br />
           <br />
           <span>ketanchauhan4356@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[
-            28.4743,
-            77.5414]} zoom={13}>
+          <MapContainer center={[28.4743, 77.5414]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[28.4743, 77.5414]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+              <Popup>Come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>
