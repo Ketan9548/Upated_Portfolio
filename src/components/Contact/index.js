@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
-import 'leaflet/dist/leaflet.css' // Ensure this is imported
+import 'leaflet/dist/leaflet.css'
 import './index.scss'
 import Loader from 'react-loaders'
 
