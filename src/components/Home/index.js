@@ -45,7 +45,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img
               src={LogoTitle}
-              alt="Python Developer Name, Web Developer Name"
+              alt="Full Stack Developer Name, Web Developer Name"
             />
             <AnimatedLetters
               letterClass={letterClass}
@@ -59,7 +59,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End & Back-end Developer/ Django Expert / Python Expert / React-Js </h2>
+          <h2>Front End & Back-end Developer/ Nodejs Expert / JavaScript Expert / React-Js </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

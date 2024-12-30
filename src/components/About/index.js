@@ -5,7 +5,7 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-  faPython,
+  faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -17,10 +17,10 @@ const About = () => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 4000);
-    return () => clearTimeout(timeoutId);
-  }, []);
+      setLetterClass('text-animate-hover')
+    }, 4000)
+    return () => clearTimeout(timeoutId)
+  }, [])
 
   return (
     <>
@@ -39,17 +39,22 @@ const About = () => {
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I'm quite confident, naturally curious, and hardworking in my profession (coding). I'm also a good problem solver with a strong foundation in data structures and algorithms (DSA)
+            I'm quite confident, naturally curious, and hardworking in my
+            profession (coding). I'm also a good problem solver with a strong
+            foundation in data structures and algorithms (DSA)
           </p>
           <p>
-            If I need to define myself, I am from Jaspur, Uttarakhand. In my family, there are 4 members including me: my father, mother, and younger brother. My schooling is complete (12th and 10th) in my hometown.
+            If I need to define myself, I am from Jaspur, Uttarakhand. In my
+            family, there are 4 members including me: my father, mother, and
+            younger brother. My schooling is complete (12th and 10th) in my
+            hometown.
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faPython} color="#DD0031" />
+              <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
