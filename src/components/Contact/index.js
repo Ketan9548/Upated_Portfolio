@@ -88,7 +88,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </li>
-                <li>
+                <li className='good'>
                   <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>

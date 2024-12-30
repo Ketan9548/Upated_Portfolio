@@ -32,8 +32,8 @@
     }
   }
 
-  input[type="text"],
-  input[type="email"] {
+  input[type='text'],
+  input[type='email'] {
     width: 100%;
     border: 0;
     background: #115173;
@@ -73,6 +73,7 @@
     margin-right: 10px;
   }
 }
+
 
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
@@ -135,8 +136,8 @@
   }
 
   .contact-form {
-    input[type="text"],
-    input[type="email"],
+    input[type='text'],
+    input[type='email'],
     textarea {
       font-size: 14px;
     }
@@ -154,8 +155,8 @@
     height: 300px;
   }
 
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
+  .contact-form input[type='text'],
+  .contact-form input[type='email'],
   .contact-form textarea {
     font-size: 14px;
     height: 30px;
@@ -178,8 +179,8 @@
     height: 250px;
   }
 
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
+  .contact-form input[type='text'],
+  .contact-form input[type='email'],
   .contact-form textarea {
     font-size: 12px;
     height: 25px;
