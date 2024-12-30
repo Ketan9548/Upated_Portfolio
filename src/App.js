@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
-import './App.scss';
-import { Routes, Route } from 'react-router-dom';
+import './App.scss'
+import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import About from './components/About';
+import About from './components/About'
 import Portfolio from './components/Portfolio'
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Contact from './components/Contact'
+import Projects from './components/Projects'
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Layout />}>
           <Route>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
@@ -22,7 +22,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
