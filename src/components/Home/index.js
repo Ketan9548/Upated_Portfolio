@@ -10,10 +10,14 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['e', 't', 'a', 'n', '', '', 'c', 'h', 'a', 'u', 'h', 'a', 'n']
   const jobArray = [
+    'S',
+    'o',
+    'f',
+    't',
     'w',
+    'a',
+    'r',
     'e',
-    'b',
-    ' ',
     ' ',
     'd',
     'e',
@@ -45,7 +49,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img
               src={LogoTitle}
-              alt="Full Stack Developer Name, Web Developer Name"
+              alt="Full Stack Developer Name, Software developer Developer Name"
             />
             <AnimatedLetters
               letterClass={letterClass}
