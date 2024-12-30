@@ -12,4 +12,4 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
   )
 }
 
-export default AnimatedLetters
+export default AnimatedLetters;
