@@ -34,7 +34,7 @@ const Portfolio = () => {
           />
         </h1>
         <div className="about_me">
-          <p>
+          <p className='text_about'>
             I am a passionate and experienced full stack developer with a strong
             background in building robust, scalable, and end-to-end web
             applications, proficient in both front-end and back-end technologies
