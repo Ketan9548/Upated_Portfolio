@@ -29,6 +29,7 @@ const Home = () => {
     'p',
     'e',
     'r',
+    's',
     '.',
   ]
   useEffect(() => {
