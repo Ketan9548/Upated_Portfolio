@@ -65,12 +65,13 @@
     }
 
     img {
+      // add css for image that is move the image in bottom
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 8px;
       position: static;
-      top: 11px;
-      left: 12px;
-      margin-left: 6px;
-      opacity: 0;
-      width: 67px;
+      top: 0;
+      width: 30px;
       height: auto;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;

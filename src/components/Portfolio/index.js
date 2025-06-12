@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import Ketan_Resume from '../../assets/Ketan_Resume.pdf'
+import JavaScript_Developer_Ketan_Resume from '../../assets/JavaScript_Developer_Ketan_Resume.pdf'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,8 +17,8 @@ const Portfolio = () => {
   })
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = Ketan_Resume
-    link.download = 'resume.pdf'
+    link.href = JavaScript_Developer_Ketan_Resume
+    link.download = 'JavaScript_Developer_Ketan_Resume.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
