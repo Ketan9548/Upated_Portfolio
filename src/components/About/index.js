@@ -34,20 +34,18 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm Ambitious and passionate Software Development Engineer with full-stack development skills.
+            Eager to work on innovative projects using modern technologies and contribute to impactful solutions in a dynamic IT environment.
           </p>
           <p align="LEFT">
-            I'm quite confident, naturally curious, and hardworking in my
-            profession (coding). I'm also a good problem solver with a strong
-            foundation in data structures and algorithms (DSA)
+            Confident and driven software developer with a strong passion for coding and a solid foundation in data structures and algorithms.
+            Known for a problem-solving mindset, curiosity, and a commitment to continuous learning.
+            Adept at building efficient, scalable solutions and tackling complex technical challenges with a structured approach.
           </p>
           <p>
-            If I need to define myself, I am from Jaspur, Uttarakhand. In my
-            family, there are 4 members including me: my father, mother, and
-            younger brother. My schooling is complete (12th and 10th) in my
-            hometown.
+            Motivated individual from Jaspur, Uttarakhand, with a strong academic foundation and disciplined work ethic.
+            I come from a supportive family of four and completed my 10th and 12th education in my hometown,
+            which helped shape my values of dedication, focus, and continuous learning.
           </p>
         </div>
 
